@@ -1,0 +1,885 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>question.answersByVote | zhihu API</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.4">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../question/answersByPage.html" />
+    
+    
+    <link rel="prev" href="../question/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="2.1"
+        data-chapter-title="question.answersByVote"
+        data-filepath="question/answersByVote.md"
+        data-basepath=".."
+        data-revision="Fri Jun 10 2016 20:43:52 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="user/index.html">
+            
+                
+                    <a href="../user/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        api.user
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="user/detail.html">
+            
+                
+                    <a href="../user/detail.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        user.detail
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="user/profile.html">
+            
+                
+                    <a href="../user/profile.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        user.profile
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="user/followers.html">
+            
+                
+                    <a href="../user/followers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        user.followers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="user/followees.html">
+            
+                
+                    <a href="../user/followees.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        user.followees
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="user/activities.html">
+            
+                
+                    <a href="../user/activities.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        user.activities
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="user/questions.html">
+            
+                
+                    <a href="../user/questions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        user.questions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="user/answers.html">
+            
+                
+                    <a href="../user/answers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        user.answers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="user/posts.html">
+            
+                
+                    <a href="../user/posts.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        user.posts
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="user/collections.html">
+            
+                
+                    <a href="../user/collections.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        user.collections
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="user/topics.html">
+            
+                
+                    <a href="../user/topics.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        user.topics
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="user/columns.html">
+            
+                
+                    <a href="../user/columns.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.11.</b>
+                        
+                        user.columns
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="question/index.html">
+            
+                
+                    <a href="../question/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        api.question
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="2.1" data-path="question/answersByVote.html">
+            
+                
+                    <a href="../question/answersByVote.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        question.answersByVote
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="question/answersByPage.html">
+            
+                
+                    <a href="../question/answersByPage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        question.answersByPage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="question/detail.html">
+            
+                
+                    <a href="../question/detail.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        question.detail
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="question/followers.html">
+            
+                
+                    <a href="../question/followers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        question.followers
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="topic/index.html">
+            
+                
+                    <a href="../topic/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        api.topic
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="topic/root.html">
+            
+                
+                    <a href="../topic/root.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        Topic.root
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="topic/hierarchy.html">
+            
+                
+                    <a href="../topic/hierarchy.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        topic.hierarchy
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="topic/followers.html">
+            
+                
+                    <a href="../topic/followers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        topic.followers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="topic/topAnswers.html">
+            
+                
+                    <a href="../topic/topAnswers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        topic.topAnswers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="topic/hotAnswers.html">
+            
+                
+                    <a href="../topic/hotAnswers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        topic.hotAnswers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="topic/newAnswers.html">
+            
+                
+                    <a href="../topic/newAnswers.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        topic.newAnswers
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="topic/pendingQuestions.html">
+            
+                
+                    <a href="../topic/pendingQuestions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        topic.pendingQuestions
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="topic/hotPendingQuestions.html">
+            
+                
+                    <a href="../topic/hotPendingQuestions.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        topic.hotPendingQuestions
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="action/index.html">
+            
+                
+                    <a href="../action/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        api.action
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="action/follow.html">
+            
+                
+                    <a href="../action/follow.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        follow/unfollow
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="action/followTopic.html">
+            
+                
+                    <a href="../action/followTopic.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        followTopic/unfollowTopic
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="action/followQuestion.html">
+            
+                
+                    <a href="../action/followQuestion.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        followQuestion/unfollowQuestion
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="action/vote.html">
+            
+                
+                    <a href="../action/vote.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        voteUp/voteNeutral/voteDown
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="action/sendMessage.html">
+            
+                
+                    <a href="../action/sendMessage.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        sendMessage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="action/block.html">
+            
+                
+                    <a href="../action/block.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        block/unblock
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="answer/index.html">
+            
+                
+                    <a href="../answer/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        api.answer
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="answer/voters.html">
+            
+                
+                    <a href="../answer/voters.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        answer.voters
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="answer/comments.html">
+            
+                
+                    <a href="../answer/comments.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        answer.comments
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="answer/exploreDay.html">
+            
+                
+                    <a href="../answer/exploreDay.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        Answer.exploreDay
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="answer/exploreMonth.html">
+            
+                
+                    <a href="../answer/exploreMonth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        Answer.exploreMonth
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="misc/index.html">
+            
+                
+                    <a href="../misc/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        Misc
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1" data-path="misc/version.html">
+            
+                
+                    <a href="../misc/version.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.1.</b>
+                        
+                        api.version
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="misc/cookie.html">
+            
+                
+                    <a href="../misc/cookie.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.2.</b>
+                        
+                        api.cookie
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="misc/config.html">
+            
+                
+                    <a href="../misc/config.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.3.</b>
+                        
+                        api._config
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="misc/request.html">
+            
+                
+                    <a href="../misc/request.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.4.</b>
+                        
+                        api._request
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >zhihu API</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="questionanswersbyvote">question.answersByVote</h1>
+<pre><code>question.answersByVote([offset])
+</code></pre><p>Get answers by vote. However, it doesn&apos;t means answers are sorted by vote count, since <em>zhihu</em> has it&apos;s own vote weight calculation.</p>
+<p>For example:</p>
+<pre><code class="lang-javascript">api.question(<span class="hljs-number">20395761</span>).answersByVote()
+    .then(<span class="hljs-built_in">console</span>.log)
+    .catch(<span class="hljs-built_in">console</span>.trace)
+</code></pre>
+<p>the result is:</p>
+<pre><code class="lang-javascript">[{
+    id: <span class="hljs-number">44292338</span>,
+    aid: <span class="hljs-number">13111581</span>,
+    createdtime: <span class="hljs-number">1428553519000</span>,
+    agrees: <span class="hljs-number">10257</span>,
+    author: {
+        name: <span class="hljs-string">&apos;&#x78D0;&#x50E7;&apos;</span>,
+        uname: <span class="hljs-string">&apos;pan-seng&apos;</span>,
+        link: <span class="hljs-string">&apos;https://www.zhihu.com/people/pan-seng&apos;</span>
+    },
+    resourceid: <span class="hljs-number">338640</span>,
+    link: <span class="hljs-string">&apos;https://www.zhihu.com/question/20395761/answer/44292338&apos;</span>,
+    comments: <span class="hljs-number">272</span>,
+    content: <span class="hljs-string">&apos;1 &#x4EBA;&#x4E00;&#x5B9A;&#x8981;&#x5C0A;&#x91CD;&#x81EA;&#x5DF1;&#x771F;&#x5B9E;&#x7684;&#x611F;&#x89C9;&#xFF0C;&#x518D;&#x591A;&#x5927;&#x9053;&#x7406;&#x4E5F;&#x4E0D;&#x5982;&#x611F;&#x89C9;&#x6765;&#x7684;&#x771F;&#x5B9E;&lt;br&gt;&lt;br&gt;&#x4E0D;&#x77E5;&#x9053;&#x5927;&#x5BB6;&#x6709;&#x6CA1;&#x6709;&#x8FD9;&#x79CD;&#x7ECF;&#x5386;&#xFF0C;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x9047;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x4EBA;&#xFF0C;&#x4ED6;&#x4EEC;&#x505A;&#x4E8B;&#x8BA9;&#x4EBA;&#x89C9;&#x5F97;&#x90FD;&#x5F88;&#x6709;&#x9053;&#x7406;&#xFF0C;&#x4F46;&#x662F;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x5C31;&#x662F;&#x83AB;&#x540D;&#x7684;&#x8BA9;&#x4EBA;&#x89C9;&#x5F97;&#x4E0D;&#x8212;&#x670D;&#x3002;&#x6709;&#x65F6;&#x5019;&#x4F60;&#x751A;&#x81F3;&#x4E0D;&#x660E;&#x767D;&#x4E3A;&#x4EC0;&#x4E48;&#x4E0D;&#x8212;&#x670D;&#x3002;&#x4F46;&#x662F;&#x5982;&#x679C;&#x4F60;&#x6709;&#x8FD9;&#x611F;&#x89C9;&#xFF0C;&#x65F6;&#x95F4;&#x957F;&#x4E86;&#x4F60;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#x4F60;&#x4EFF;&#x4F5B;&#x8FDB;&#x5165;&#x4E86;&#x5BF9;&#x65B9;&#x7684;&#x4E00;&#x79CD;&#x201C;&#x5708;&#x5957;&#x201D;&#xFF0C;&#x5BF9;&#x65B9;&#x4E0D;&#x662F;&#x6709;&#x610F;&#x4E3A;&#x4E4B;&#xFF0C;&#x4F46;&#x662F;&#x786E;&#x5B9E;&#x5F88;&#x8BA9;&#x4EBA;&#x90C1;&#x95F7;&#xFF0C;&#x8FD9;&#x65F6;&#x5019;&#x4F60;&#x5C31;&#x660E;&#x767D;&#x5F53;&#x65F6;&#x7684;&#x90A3;&#x79CD;&#x4E0D;&#x8212;&#x670D;&#x7684;&#x611F;&#x89C9;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x4E86;&#x3002;&#x5BF9;&#x7684;&#xFF0C;&#x611F;&#x89C9;&#x4E0D;&#x80FD;&#x6B3A;&#x9A97;&#x4EBA;&#x3002;&#x611F;&#x89C9;&#x6709;&#x65F6;&#x5019;&#x662F;&#x4E0D;&#x51C6;&#x7684;&#xFF0C;&#x6709;&#x65F6;&#x5019;&#x4E00;&#x4E2A;&#x60C5;&#x5546;&#x9AD8;&#x7684;&#x4EBA;&#x53EF;&#x4EE5;&#x5C06;&#x81EA;&#x5DF1;&#x4F2A;&#x88C5;&#x7684;&#x5F88;&#x597D;&#xFF0C;&#x4F46;&#x66F4;&#x591A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x76F4;&#x89C9;&#x548C;&#x611F;&#x89C9;&#x53EF;&#x4EE5;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x5F88;&#x591A;&#x771F;&#x7406;&#xFF0C;&#x6211;&#x4EEC;&#x65E0;&#x6CD5;&#x4ECE;&#x903B;&#x8F91;&#x4E0A;&#x8BC1;&#x660E;&#x7684;&#x771F;&#x7406;&#xFF0C;&#x5343;&#x4E07;&#x4E0D;&#x8981;&#x5FFD;&#x89C6;&#x611F;&#x89C9;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4EBA;&#x5927;&#x5BB6;&#x90FD;&#x8BF4;&#x4ED6;&#x597D;&#xFF0C;&#x4F46;&#x662F;&#x4F60;&#x5C31;&#x662F;&#x8BA4;&#x4E3A;&#x4ED6;&#x4E0D;&#x597D;&#xFF0C;&#x5343;&#x4E07;&#x4E0D;&#x8981;&#x8BA4;&#x4E3A;&#x81EA;&#x5DF1;&#x9519;&#x4E86;&#x3002;&#x5F88;&#x53EF;&#x80FD;&#x4F60;&#x771F;&#x7684;&#x611F;&#x89C9;&#x5BF9;&#x4E86;&lt;br&gt;&#x8FD8;&#x6709;&#x4E00;&#x4E9B;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x65E0;&#x6CD5;&#x7406;&#x89E3;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#xFF0C;&#x6211;&#x4EEC;&#x603B;&#x89C9;&#x5F97;&#x662F;&#x81EA;&#x5DF1;&#x9053;&#x5FB7;&#x4E0D;&#x591F;&#x6216;&#x8005;&#x8BA4;&#x77E5;&#x4E0D;&#x591F;&#x3002;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x6539;&#x53D8;&#x81EA;&#x5DF1;&#x7684;&#x4E00;&#x4E9B;&#x201C;&#x7F3A;&#x70B9;&#x201D;&#x6765;&#x8FCE;&#x5408;&#x4E00;&#x4E9B;&#x6240;&#x8C13;&#x7684;&#x666E;&#x904D;&#x7684;&#x201C;&#x9053;&#x5FB7;&#x89C2;&#x5FF5;&#x201D;&#xFF0C;&#x8FD9;&#x4E5F;&#x4F1A;&#x8BA9;&#x81EA;&#x5DF1;&#x611F;&#x89C9;&#x522B;&#x626D;&#x3002;&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x65F6;&#x95F4;&#x4E45;&#x4E86;&#x5C31;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x8FD9;&#x4E9B;&#x89C2;&#x5FF5;&#x5F88;&#x591A;&#x65F6;&#x5019;&#x662F;&#x4E00;&#x79CD;&#x6D17;&#x8111;&#xFF0C;&#x5F53;&#x521D;&#x81EA;&#x5DF1;&#x624D;&#x662F;&#x591A;&#x4E48;&#x7684;&#x597D;&#xFF0C;&#x81EA;&#x5DF1;&#x5DF2;&#x7ECF;&#x53D8;&#x5F97;&#x9762;&#x76EE;&#x5168;&#x975E;&#x4E86;&#xFF0C;&#x771F;&#x5FC3;&#x540E;&#x6094;&#x554A;&#x3002;&#x6240;&#x4EE5;&#x5343;&#x4E07;&#x8981;&#x5C0A;&#x91CD;&#x611F;&#x89C9;&#x3002;&lt;br&gt;&#x4F20;&#x9001;&#x95E8;&#xFF1A;&lt;a href=&quot;http://www.zhihu.com/question/29329566/answer/44144979&quot; class=&quot;internal&quot;&gt;&#x5BF9;&#x4EB2;&#x4EBA;&#x7684;&#x751F;&#x8001;&#x75C5;&#x6B7B;&#x770B;&#x5F97;&#x5F88;&#x6DE1;&#xFF0C;&#x7B97;&#x51B7;&#x8840;&#x5417;&#xFF1F; - &#x78D0;&#x50E7;&#x7684;&#x56DE;&#x7B54;&lt;/a&gt;  ... ...&apos;</span>,
+    crawltime: <span class="hljs-number">1462519474564</span>
+}, <span class="hljs-comment">// ... ...</span>
+]
+</code></pre>
+<p>It&apos;s also easy to get all answers of a question by vote:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> question = api.question(<span class="hljs-number">20395761</span>)
+<span class="hljs-keyword">var</span> offset = <span class="hljs-number">0</span>
+
+next()
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">next</span>(<span class="hljs-params"></span>) </span>{
+    question.answersByVote(offset)
+        .then(data =&gt; {
+            <span class="hljs-keyword">if</span> (data.length) {
+                offset += data.length
+                handleAnswers(data)
+                next()
+            } <span class="hljs-keyword">else</span> {
+                <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;Done!&apos;</span>)
+            }
+        })
+        .catch(<span class="hljs-built_in">console</span>.trace)
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">handleAnswers</span>(<span class="hljs-params">data</span>) </span>{
+    <span class="hljs-comment">// do something</span>
+}
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../question/index.html" class="navigation navigation-prev " aria-label="Previous page: api.question"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../question/answersByPage.html" class="navigation navigation-next " aria-label="Next page: question.answersByPage"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
